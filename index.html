@@ -372,13 +372,6 @@
           'WhatsApp CTA';
 
         if (typeof fbq === 'function') {
-          fbq('track', 'CompleteRegistration', {
-            content_name: leadSource,
-            content_category: 'old_money_fit',
-            destination: 'whatsapp_group',
-          });
-
-          // Evento custom para facilitar validação no Test Events do Meta.
           fbq('trackCustom', 'LeadButtonClick', {
             content_name: leadSource,
             content_category: 'old_money_fit',
